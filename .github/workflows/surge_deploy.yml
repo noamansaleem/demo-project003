@@ -38,6 +38,9 @@ jobs:
         # Yarn command
           cmd: install
           
+      - name: build react app
+        run: yarn build
+        
       - name: Install Surge
         run: npm install -g surge
       - name: Run surge
